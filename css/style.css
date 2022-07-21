@@ -10,6 +10,7 @@
     --negro:#222222;
     --blanco: #F3F3F3;
     --rojo:#D01418;
+    --gold:#FFD700;
 }
 
 @keyframes animation{
@@ -29,7 +30,8 @@ button{
 }
 
 button:hover{
-    background-color: ;
+    background-color: var(--gold);
+    color: var(--negro);
 }
 
 h1{
