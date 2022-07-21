@@ -9,10 +9,41 @@
 :root{
     --negro:#222222;
     --blanco: #F3F3F3;
-
-
+    --rojo:#D01418;
 }
 
+@keyframes animation{
+    0%{opacity: 0%;}
+    30%{ transform: scale(2); opacity: 100%; }
+    100%{opacity: 0%;}
+}
+
+button{
+    color: var(--blanco);
+    background-color: var(--rojo);
+    font-size: 1em;
+    padding: 1em;
+    border: none;
+    width: 10em;
+    border-radius: 0.5rem;
+}
+
+button:hover{
+    background-color: ;
+}
+
+h1{
+    color: var(--blanco);
+    padding: 3em;
+}
+
+span{
+    color: var(--rojo);
+    animation-name: animation;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
 
 
 
@@ -29,7 +60,8 @@ header section {
     justify-content: space-around;
     align-items: center;
 }
- 
+
+
 header img{
     padding: 0.5em;
 }
@@ -39,7 +71,7 @@ header a{
     margin: 0.5em;
 }
 
-.product{
+.slide{
     background-image: url(../img/img\ 1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -47,11 +79,21 @@ header a{
     height: 30em;
 }
 
-.product, h1, button{
+.slide, button{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2em;
+}
 
+.product, h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.card{
+    display: flex;
+    justify-content: space-around;
 }
