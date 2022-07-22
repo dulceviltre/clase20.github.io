@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*variables*/
+:root {
+  --negro: #222222;
+  --blanco: #f3f3f3;
+  --rojo: #d01418;
+  --gold: #ffd700;
+  --LightSalmon: #ffa07a;
+  --White: #ffffff;
+  --verde: #619d00;
+}
+
+@-webkit-keyframes animation {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    transform: scale(2);
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0%;
+  }
+  30% {
+    transform: scale(2);
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+header {
+  padding: 1em;
+  background-color: var(--negro);
+  display: flex;
+  justify-content: space-between;
+}
+header section {
+  display: flex;
+  color: var(--blanco);
+  justify-content: space-around;
+  align-items: center;
+}
+header section a {
+  color: var(--blanco);
+  margin: 0.5em;
+}
+header img {
+  padding: 0.5em;
+}
+
+main .slide {
+  background-image: url(../img/img\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 30em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .slide h1 {
+  margin: 2em;
+  color: var(--blanco);
+  letter-spacing: 0.08em;
+  font-size: 3em;
+}
+main .slide span {
+  color: var(--rojo);
+  -webkit-animation-name: animation;
+          animation-name: animation;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+main .slide button {
+  color: var(--blanco);
+  background-color: var(--rojo);
+  font-size: 1em;
+  padding: 1em;
+  border: none;
+  width: 10em;
+  border-radius: 0.5rem;
+}
+main .slide button:hover {
+  background-color: var(--LightSalmon);
+  color: var(--negro);
+}
+main .product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  background-color: var(--blanco);
+}
+main .product h2 {
+  padding: 1em;
+}
+main .product .card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+main .product .card article {
+  background-color: var(--White);
+  gap: 4em;
+  width: 20%;
+}
+main .product .card article a {
+  display: block;
+  text-align: center;
+}
+main .product .card article a img {
+  width: 60%;
+  padding: 1em;
+}
+main .product .card article a .emptybar {
+  border-top: 1px solid var(--negro);
+}
+main .product .card article a .carddetails {
+  padding: 1em;
+  color: var(--negro);
+  text-align: left;
+}
+main .product .card article a .carddetails .precio {
+  font-size: 20px;
+}
+main .product .card article a .carddetails .dues {
+  font-size: 10px;
+}
+main .product .card article a .carddetails .envio {
+  color: var(--verde);
+  font-size: 8px;
+  padding: 0.2em;
+}/*# sourceMappingURL=estilos.css.map */

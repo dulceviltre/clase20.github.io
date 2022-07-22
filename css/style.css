@@ -1,43 +1,11 @@
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-/*variables*/
-:root{
-    --negro:#222222;
-    --blanco: #F3F3F3;
-    --rojo:#D01418;
-    --gold:#FFD700;
-}
 
-@keyframes animation{
-    0%{opacity: 0%;}
-    30%{ transform: scale(2); opacity: 100%; }
-    100%{opacity: 0%;}
-}
 
-button{
-    color: var(--blanco);
-    background-color: var(--rojo);
-    font-size: 1em;
-    padding: 1em;
-    border: none;
-    width: 10em;
-    border-radius: 0.5rem;
-}
 
-button:hover{
-    background-color: var(--gold);
-    color: var(--negro);
-}
 
-h1{
-    color: var(--blanco);
-    padding: 3em;
-}
+
+
+
 
 span{
     color: var(--rojo);

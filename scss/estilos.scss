@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/*variables*/
+:root {
+    --negro: #222222;
+    --blanco: #f3f3f3;
+    --rojo: #d01418;
+    --gold: #ffd700;
+    --LightSalmon: #ffa07a;
+    --White: #ffffff;
+    --verde: #619d00;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0%;
+    }
+
+    30% {
+        transform: scale(2);
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0%;
+    }
+}
+
+header {
+    padding: 1em;
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-between;
+
+    section {
+        display: flex;
+        color: var(--blanco);
+        justify-content: space-around;
+        align-items: center;
+
+        a {
+            color: var(--blanco);
+            margin: 0.5em;
+        }
+    }
+
+    img {
+        padding: 0.5em;
+    }
+}
+
+main {
+    .slide {
+        background-image: url(../img/img\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 30em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            margin: 2em;
+            color: var(--blanco);
+            letter-spacing: 0.08em;
+            font-size: 3em;
+        }
+
+        span {
+            color: var(--rojo);
+            animation-name: animation;
+            animation-duration: 1000ms;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+
+        button {
+            color: var(--blanco);
+            background-color: var(--rojo);
+            font-size: 1em;
+            padding: 1em;
+            border: none;
+            width: 10em;
+            border-radius: 0.5rem;
+        }
+
+        button:hover {
+            background-color: var(--LightSalmon);
+            color: var(--negro);
+        }
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2em;
+        background-color: var(--blanco);
+
+        h2 {
+            padding: 1em;
+        }
+
+        .card {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+
+            article {
+                background-color: var(--White);
+                gap: 4em;
+                width: 20%;
+
+                a {
+                    display: block;
+                    text-align: center;
+
+                    img {
+                        width: 60%;
+                        padding: 1em;
+                    }
+
+                    .emptybar {
+                        border-top: 1px solid var(--negro);
+                    }
+
+                    .carddetails {
+                        padding: 1em;
+                        color: var(--negro);
+                        text-align: left;
+
+                            .precio {
+                                font-size: 20px;
+                                
+                                }
+
+                                .dues {
+                                    font-size: 10px;
+                                }
+
+                                .envio {
+                                    color: var(--verde);
+                                    font-size: 8px;
+                                    padding: 0.2em;
+                                    }
+                                }
+                }
+            }
+        }
+    }
+}
